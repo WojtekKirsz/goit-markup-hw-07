@@ -1,0 +1,30 @@
+.our-clients {
+    padding-bottom: 94px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    &__list {
+        padding-top: 50px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+
+        &--item {
+            border: 1px solid $LightGrey2;
+            width: 170px;
+            height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: currentColor;
+            color: $LightGrey2;
+            cursor: pointer;
+        }
+    }
+}

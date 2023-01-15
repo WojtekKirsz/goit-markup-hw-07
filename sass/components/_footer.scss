@@ -1,0 +1,131 @@
+.footer-wrapper {
+    background: $LightBlack;
+}
+
+.footer-container {
+    padding: 60px 15px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.links-format {
+    text-decoration: none;
+}
+
+.address-wrapper {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: block;
+    padding-top: 20px;
+}
+
+.address__text {
+    color: $StandardWhite;
+}
+
+.contact-wrapper {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    gap: 9px;
+}
+
+.contact__text {
+    color: $LightGrey;
+}
+
+.footer-social {
+    padding-top: 12px;
+    padding-left: 70px;
+
+    &__header {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $StandardWhite;
+    }
+
+    &__icon-list {
+        padding-top: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__icon-item {
+        fill: $StandardWhite;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-newsletter {
+    padding-top: 12px;
+    padding-left: 78px;
+
+    &__wrapper input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        width: 358px;
+        left: 815px;
+        top: 2787px;
+        background: $LightBlack;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 16px;
+        padding-bottom: 15px;
+    }
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+}
+
+.button-newsletter {
+    background: $StandardBlue;
+    margin-left: 12px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 13px 26px 13px 42px;
+    border-radius: 4px;
+
+    &__wrappper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        color: $StandardWhite;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+}

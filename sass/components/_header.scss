@@ -1,0 +1,107 @@
+.header-border {
+    border-bottom: 1px solid $SuperLightGrey;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 94px 15px 0 15px;
+}
+
+.container-header {
+    padding: 24px 15px 25px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+
+    &__logo {
+        text-decoration: none;
+        color: $StandardBlack;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+
+        &--blue {
+            color: $StandardBlue;
+        }
+
+        &--white {
+            color: $StandardWhite;
+        }
+    }
+
+    &__links {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        list-style: none;
+        display: flex;
+        gap: 46px;
+    }
+
+    &__links-item {
+        text-decoration: none;
+        color: $StandardBlack;
+
+        &--underline {
+            color: $StandardBlue;
+            position: relative;
+        }
+
+        &--active_agency {
+            text-decoration: none;
+            color: $StandardBlue;
+        }
+
+        &--active_agency::after {
+            content: '';
+            position: absolute;
+            width: 53px;
+            border-bottom: 4px solid $StandardBlue;
+            bottom: -34px;
+            display: flex;
+        }
+
+        &--active_portfolio {
+            text-decoration: none;
+            color: $StandardBlue;
+        }
+
+        &--active_portfolio::after {
+            content: '';
+            position: absolute;
+            width: 58px;
+            border-bottom: 4px solid $StandardBlue;
+            bottom: -34px;
+            display: flex;
+        }
+    }
+}
+
+.contact-links {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        text-decoration: none;
+        color: $LightGrey;
+    }
+
+    &__icon {
+        vertical-align: middle;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}

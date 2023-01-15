@@ -1,0 +1,219 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: visibility 550ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden .modal {
+    transform: translateY(-150%);
+}
+
+.modal {
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translateY(0);
+    max-width: 528px;
+    padding: 40px;
+    background-color: $StandardWhite;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: $StandardWhite;
+    border: none;
+    cursor: pointer;
+}
+
+.form__text {
+    &--header {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        height: 23px;
+        width: 448px;
+        margin-bottom: 12px;
+    }
+
+    &--footer {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $LightGrey;
+    }
+
+    &--item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $LightGrey;
+    }
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & input {
+        margin-top: 4px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-left: 42px;
+        padding-bottom: 15px;
+        width: 448px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: $StandardBlack;
+        outline: none;
+
+        &:hover,
+        &:focus {
+            border-color: $StandardBlue;
+        }
+
+        &:hover + svg,
+        &:focus + svg {
+            border-color: $StandardBlue;
+        }
+    }
+
+    & textarea {
+        margin-top: 4px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-left: 16px;
+        padding-bottom: 15px;
+        width: 448px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        resize: none;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: $StandardBlack;
+
+        &:hover,
+        &:focus {
+            border-color: $StandardBlue;
+            outline: none;
+        }
+    }
+}
+
+textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-icons {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+
+.term-conditions-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    & [type='checkbox'] {
+        background: $StandardWhite;
+        appearance: none;
+        border: 1px solid $StandardBlack;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        margin-right: 8px;
+    }
+
+    & input[type='checkbox']::before {
+        content: '';
+        width: 16px;
+        height: 15px;
+        background-color: $StandardBlue;
+        border-radius: 2px;
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 4px;
+        opacity: 0;
+    }
+
+    & svg {
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    & input[type='checkbox']:checked + svg {
+        opacity: 1;
+        fill: $StandardWhite;
+    }
+
+    & input[type='checkbox']:checked::before {
+        opacity: 1;
+    }
+}
+
+.button-form {
+    font-family: 'Roboto', sans-serif;
+    color: $StandardWhite;
+    background: $StandardBlue;
+    margin-left: 25%;
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.checkbox:hover {
+    border-color: $StandardBlue;
+    fill: $StandardBlue;
+}
