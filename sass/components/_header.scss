@@ -50,6 +50,9 @@
     &__links-item {
         text-decoration: none;
         color: $StandardBlack;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color, background-color, border-color, fill;
 
         &--underline {
             color: $StandardBlue;
@@ -83,6 +86,11 @@
             bottom: -34px;
             display: flex;
         }
+
+        &:hover,
+        &:focus {
+            color: $StandardBlue;
+        }
     }
 }
 
@@ -97,6 +105,14 @@
     &__item {
         text-decoration: none;
         color: $LightGrey;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color, background-color, border-color, fill;
+
+        &:hover,
+        &:focus {
+            color: $StandardBlue;
+        }
     }
 
     &__icon {

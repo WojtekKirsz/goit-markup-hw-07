@@ -63,5 +63,15 @@
         border-radius: 50%;
         justify-content: center;
         align-items: center;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color, background-color, border-color, fill;
+
+        &:hover,
+        &:focus {
+            fill: $StandardWhite;
+            background-color: $StandardBlue;
+            border-radius: 50%;
+        }
     }
 }
