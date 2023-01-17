@@ -18,18 +18,18 @@
         color: $StandardWhite;
         margin: 106px 252px 30px;
     }
-}
 
-.button-order {
-    margin-bottom: 106px;
-    background: $StandardBlue;
-    color: $StandardWhite;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    padding: 10px 41px;
-    cursor: pointer;
-    border: none;
+    &__button {
+        margin-bottom: 106px;
+        background: $StandardBlue;
+        color: $StandardWhite;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        padding: 10px 41px;
+        cursor: pointer;
+        border: none;
+    }
 }

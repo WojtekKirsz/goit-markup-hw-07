@@ -22,7 +22,6 @@
 
     &__logo {
         text-decoration: none;
-        color: $StandardBlack;
         font-size: 26px;
         font-weight: 700;
         line-height: 1.17;
@@ -34,6 +33,10 @@
 
         &--white {
             color: $StandardWhite;
+        }
+
+        &--black {
+            color: $StandardBlack;
         }
     }
 
