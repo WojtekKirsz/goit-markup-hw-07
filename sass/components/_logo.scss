@@ -1,0 +1,19 @@
+.logo {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    &__text {
+        color: $StandardBlack;
+
+        &--blue {
+            color: $StandardBlue;
+        }
+
+        &--white {
+            color: $StandardWhite;
+        }
+    }
+}

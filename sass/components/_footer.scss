@@ -13,20 +13,25 @@
     text-decoration: none;
 }
 
-.address-wrapper {
+.address {
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     display: block;
     padding-top: 20px;
+    text-decoration: none;
+
+    &__text {
+        color: $StandardWhite;
+    }
 }
 
-.address__text {
-    color: $StandardWhite;
-}
+// .address__text {
+//     color: $StandardWhite;
+// }
 
-.contact-wrapper {
+.contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -35,19 +40,31 @@
     flex-direction: column;
     padding-top: 9px;
     gap: 9px;
-}
 
-.contact__text {
-    color: $LightGrey;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: color, background-color, border-color, fill;
+    &__text {
+        color: $LightGrey;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-property: color, background-color, border-color, fill;
 
-    &:focus,
-    &:hover {
-        color: $StandardBlue;
+        &:focus,
+        &:hover {
+            color: $StandardBlue;
+        }
     }
 }
+
+// .contact__text {
+//     color: $LightGrey;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-duration: 250ms;
+//     transition-property: color, background-color, border-color, fill;
+
+//     &:focus,
+//     &:hover {
+//         color: $StandardBlue;
+//     }
+// }
 
 .footer-social {
     padding-top: 12px;

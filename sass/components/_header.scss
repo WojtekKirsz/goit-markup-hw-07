@@ -20,26 +20,6 @@
     align-items: center;
     gap: 93px;
 
-    &__logo {
-        text-decoration: none;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-
-        &--blue {
-            color: $StandardBlue;
-        }
-
-        &--white {
-            color: $StandardWhite;
-        }
-
-        &--black {
-            color: $StandardBlack;
-        }
-    }
-
     &__links {
         font-size: 14px;
         font-weight: 500;
