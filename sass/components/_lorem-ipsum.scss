@@ -20,13 +20,17 @@
         text-transform: uppercase;
         padding-bottom: 10px;
         padding-right: 30px;
+        color: $StandardBlack;
+    }
 
-        &--desc {
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: $LightGrey;
-            padding-right: 30px;
-        }
+    &__text-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $LightGrey;
+        font-family: Roboto;
+        letter-spacing: 0.03em;
+        text-align: left;
     }
 }
